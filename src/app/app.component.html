@@ -1,0 +1,21 @@
+<!-- <app-top-bar></app-top-bar> -->
+
+<div class="container">
+  <div style="text-align: center; margin-top: 20px;">
+    <h2>JSON to Excel Converter</h2>
+    <input type="file" (change)="onFileUpload($event)" accept=".json" />
+    <button
+      (click)="exportToExcel()"
+      [disabled]="!jsonData.length"
+      style="margin-left: 10px;"
+    >
+      Export to Excel
+    </button>
+  </div>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
